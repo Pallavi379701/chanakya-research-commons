@@ -1,0 +1,650 @@
+{
+  "description": "Ground truth datasets for quantitative evaluation of Deduplication, Spam, and Topic Spikes",
+  "generated_at": "2026-11-18T18:21:33.296666+00:00",
+  "summary": {
+    "total_papers": 600,
+    "planted_duplicates_count": 30,
+    "total_users": 65,
+    "planted_spam_accounts_count": 10,
+    "total_posts": 1260,
+    "planted_spam_posts_count": 60,
+    "planted_spikes_count": 3,
+    "total_events": 11700
+  },
+  "planted_duplicates": [
+    {
+      "original_id": 1,
+      "original_title": "Attention Is All You Need for Multimodal Representation",
+      "duplicate_id": 571,
+      "duplicate_title": "Attention Is All You Need for Multimodal Representation [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 6,
+      "original_title": "Attention Is All You Need for Multimodal Representation: Part 6 - An Empirical Study",
+      "duplicate_id": 572,
+      "duplicate_title": "Attention Is All You Need in Multimodal Representation: Part 6 - An Empirical Study",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 11,
+      "original_title": "Advances in Large Language Models: Attention Is All You Need for Multimodal Representation",
+      "duplicate_id": 573,
+      "duplicate_title": "Advances in Large Language Models: Attention Is All You Need for Multimodal Representation (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 16,
+      "original_title": "Graph Neural Networks with Dynamic Message Passing for Knowledge Graphs",
+      "duplicate_id": 574,
+      "duplicate_title": "Graph neural networks with dynamic message passing for knowledge graphs",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 21,
+      "original_title": "Graph Neural Networks with Dynamic Message Passing for Knowledge Graphs: Part 6 - An Empirical Study",
+      "duplicate_id": 575,
+      "duplicate_title": "Graph Neural Networks with Dynamic Message Passing for Knowledge Graphs: Part 6 - An Empirical Study [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 26,
+      "original_title": "Advances in Large Language Models: Graph Neural Networks with Dynamic Message Passing for Knowledge Graphs",
+      "duplicate_id": 576,
+      "duplicate_title": "Advances in Large Language Models: Graph Neural Networks with Dynamic Message Passing in Knowledge Graphs",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 31,
+      "original_title": "Retrieval-Augmented Generation for Verifiable Scientific Reasoning",
+      "duplicate_id": 577,
+      "duplicate_title": "Retrieval-Augmented Generation for Verifiable Scientific Reasoning (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 36,
+      "original_title": "Retrieval-Augmented Generation for Verifiable Scientific Reasoning: Part 6 - An Empirical Study",
+      "duplicate_id": 578,
+      "duplicate_title": "Retrieval-augmented generation for verifiable scientific reasoning: part 6 - an empirical study",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 41,
+      "original_title": "Advances in Large Language Models: Retrieval-Augmented Generation for Verifiable Scientific Reasoning",
+      "duplicate_id": 579,
+      "duplicate_title": "Advances in Large Language Models: Retrieval-Augmented Generation for Verifiable Scientific Reasoning [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 46,
+      "original_title": "Low-Rank Adaptation (LoRA) for Efficient LLM Fine-Tuning in Academia",
+      "duplicate_id": 580,
+      "duplicate_title": "Low-Rank Adaptation (LoRA) in Efficient LLM Fine-Tuning in Academia",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 51,
+      "original_title": "Low-Rank Adaptation (LoRA) for Efficient LLM Fine-Tuning in Academia: Part 6 - An Empirical Study",
+      "duplicate_id": 581,
+      "duplicate_title": "Low-Rank Adaptation (LoRA) for Efficient LLM Fine-Tuning in Academia: Part 6 - An Empirical Study (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 56,
+      "original_title": "Advances in Large Language Models: Low-Rank Adaptation (LoRA) for Efficient LLM Fine-Tuning in Academia",
+      "duplicate_id": 582,
+      "duplicate_title": "Advances in large language models: low-rank adaptation (lora) for efficient llm fine-tuning in academia",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 61,
+      "original_title": "Contrastive Representation Learning for Unsupervised Document Clustering",
+      "duplicate_id": 583,
+      "duplicate_title": "Contrastive Representation Learning for Unsupervised Document Clustering [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 66,
+      "original_title": "Contrastive Representation Learning for Unsupervised Document Clustering: Part 6 - An Empirical Study",
+      "duplicate_id": 584,
+      "duplicate_title": "Contrastive Representation Learning in Unsupervised Document Clustering: Part 6 - An Empirical Study",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 71,
+      "original_title": "Advances in Large Language Models: Contrastive Representation Learning for Unsupervised Document Clustering",
+      "duplicate_id": 585,
+      "duplicate_title": "Advances in Large Language Models: Contrastive Representation Learning for Unsupervised Document Clustering (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 76,
+      "original_title": "MinHash and Locality-Sensitive Hashing for Massive Record Deduplication",
+      "duplicate_id": 586,
+      "duplicate_title": "Minhash and locality-sensitive hashing for massive record deduplication",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 81,
+      "original_title": "MinHash and Locality-Sensitive Hashing for Massive Record Deduplication: Part 6 - An Empirical Study",
+      "duplicate_id": 587,
+      "duplicate_title": "MinHash and Locality-Sensitive Hashing for Massive Record Deduplication: Part 6 - An Empirical Study [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 86,
+      "original_title": "Advances in Large Language Models: MinHash and Locality-Sensitive Hashing for Massive Record Deduplication",
+      "duplicate_id": 588,
+      "duplicate_title": "Advances in Large Language Models: MinHash & Locality-Sensitive Hashing in Massive Record Deduplication",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 91,
+      "original_title": "Diffusion Models for High-Dimensional Scientific Image Reconstruction",
+      "duplicate_id": 589,
+      "duplicate_title": "Diffusion Models for High-Dimensional Scientific Image Reconstruction (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 96,
+      "original_title": "Diffusion Models for High-Dimensional Scientific Image Reconstruction: Part 6 - An Empirical Study",
+      "duplicate_id": 590,
+      "duplicate_title": "Diffusion models for high-dimensional scientific image reconstruction: part 6 - an empirical study",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 101,
+      "original_title": "Advances in Large Language Models: Diffusion Models for High-Dimensional Scientific Image Reconstruction",
+      "duplicate_id": 591,
+      "duplicate_title": "Advances in Large Language Models: Diffusion Models for High-Dimensional Scientific Image Reconstruction [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 106,
+      "original_title": "Federated Learning with Differential Privacy under Heterogeneous Data",
+      "duplicate_id": 592,
+      "duplicate_title": "Federated Learning with Differential Privacy under Heterogeneous Data",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 111,
+      "original_title": "Federated Learning with Differential Privacy under Heterogeneous Data: Part 6 - An Empirical Study",
+      "duplicate_id": 593,
+      "duplicate_title": "Federated Learning with Differential Privacy under Heterogeneous Data: Part 6 - An Empirical Study (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 116,
+      "original_title": "Advances in Large Language Models: Federated Learning with Differential Privacy under Heterogeneous Data",
+      "duplicate_id": 594,
+      "duplicate_title": "Advances in large language models: federated learning with differential privacy under heterogeneous data",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 121,
+      "original_title": "Reinforcement Learning from Human Feedback for Instruction Aligned LLMs",
+      "duplicate_id": 595,
+      "duplicate_title": "Reinforcement Learning from Human Feedback for Instruction Aligned LLMs [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 126,
+      "original_title": "Reinforcement Learning from Human Feedback for Instruction Aligned LLMs: Part 6 - An Empirical Study",
+      "duplicate_id": 596,
+      "duplicate_title": "Reinincement Learning from Human Feedback in Instruction Aligned LLMs: Part 6 - An Empirical Study",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 131,
+      "original_title": "Advances in Large Language Models: Reinforcement Learning from Human Feedback for Instruction Aligned LLMs",
+      "duplicate_id": 597,
+      "duplicate_title": "Advances in Large Language Models: Reinforcement Learning from Human Feedback for Instruction Aligned LLMs (Extended Version)",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 136,
+      "original_title": "Zero-Shot Topic Modeling via Dense Embedding Quantization",
+      "duplicate_id": 598,
+      "duplicate_title": "Zero-shot topic modeling via dense embedding quantization",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 141,
+      "original_title": "Zero-Shot Topic Modeling via Dense Embedding Quantization: Part 6 - An Empirical Study",
+      "duplicate_id": 599,
+      "duplicate_title": "Zero-Shot Topic Modeling via Dense Embedding Quantization: Part 6 - An Empirical Study [Preprint]",
+      "expected_duplicate": true
+    },
+    {
+      "original_id": 146,
+      "original_title": "Advances in Large Language Models: Zero-Shot Topic Modeling via Dense Embedding Quantization",
+      "duplicate_id": 600,
+      "duplicate_title": "Advances in Large Language Models: Zero-Shot Topic Modeling via Dense Embedding Quantization",
+      "expected_duplicate": true
+    }
+  ],
+  "planted_spam_accounts": [
+    {
+      "username": "cryptobot99",
+      "email": "cryptobot99@spammachine.fake"
+    },
+    {
+      "username": "easyessayfast",
+      "email": "easyessayfast@spammachine.fake"
+    },
+    {
+      "username": "cheappaper24",
+      "email": "cheappaper24@spammachine.fake"
+    },
+    {
+      "username": "promolink77",
+      "email": "promolink77@spammachine.fake"
+    },
+    {
+      "username": "bonusjackpot",
+      "email": "bonusjackpot@spammachine.fake"
+    },
+    {
+      "username": "fastdegrees",
+      "email": "fastdegrees@spammachine.fake"
+    },
+    {
+      "username": "essaywritingservice",
+      "email": "essaywritingservice@spammachine.fake"
+    },
+    {
+      "username": "assignmenthelperx",
+      "email": "assignmenthelperx@spammachine.fake"
+    },
+    {
+      "username": "freegiftcard99",
+      "email": "freegiftcard99@spammachine.fake"
+    },
+    {
+      "username": "bitcoinminer4u",
+      "email": "bitcoinminer4u@spammachine.fake"
+    }
+  ],
+  "planted_spam_posts": [
+    {
+      "post_id": 1201,
+      "user_id": 63,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1202,
+      "user_id": 58,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1203,
+      "user_id": 64,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1204,
+      "user_id": 58,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1205,
+      "user_id": 62,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1206,
+      "user_id": 61,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1207,
+      "user_id": 63,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1208,
+      "user_id": 58,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1209,
+      "user_id": 61,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1210,
+      "user_id": 64,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1211,
+      "user_id": 61,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1212,
+      "user_id": 65,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1213,
+      "user_id": 58,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1214,
+      "user_id": 57,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1215,
+      "user_id": 61,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1216,
+      "user_id": 56,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1217,
+      "user_id": 60,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1218,
+      "user_id": 65,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1219,
+      "user_id": 59,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1220,
+      "user_id": 57,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1221,
+      "user_id": 59,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1222,
+      "user_id": 63,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1223,
+      "user_id": 62,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1224,
+      "user_id": 60,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1225,
+      "user_id": 64,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1226,
+      "user_id": 65,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1227,
+      "user_id": 59,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1228,
+      "user_id": 63,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1229,
+      "user_id": 58,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1230,
+      "user_id": 64,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1231,
+      "user_id": 59,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1232,
+      "user_id": 58,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1233,
+      "user_id": 57,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1234,
+      "user_id": 58,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1235,
+      "user_id": 65,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1236,
+      "user_id": 56,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1237,
+      "user_id": 62,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1238,
+      "user_id": 59,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1239,
+      "user_id": 64,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1240,
+      "user_id": 64,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1241,
+      "user_id": 58,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1242,
+      "user_id": 63,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1243,
+      "user_id": 61,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1244,
+      "user_id": 62,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1245,
+      "user_id": 56,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1246,
+      "user_id": 57,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1247,
+      "user_id": 64,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1248,
+      "user_id": 56,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1249,
+      "user_id": 57,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1250,
+      "user_id": 63,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1251,
+      "user_id": 59,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1252,
+      "user_id": 58,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1253,
+      "user_id": 65,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1254,
+      "user_id": 58,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1255,
+      "user_id": 61,
+      "title": "URGENT: Cheap Essay & Dissertation Writing Service Guaranteed A+",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1256,
+      "user_id": 59,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1257,
+      "user_id": 58,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1258,
+      "user_id": 59,
+      "title": "Double your Bitcoin in 24 hours with Chanakya Crypto Pool!",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1259,
+      "user_id": 60,
+      "title": "Buy Verified GMAT and GRE Scores No Exam Needed",
+      "expected_spam": true
+    },
+    {
+      "post_id": 1260,
+      "user_id": 63,
+      "title": "Discount Rolex and Replica Watches Free Delivery",
+      "expected_spam": true
+    }
+  ],
+  "planted_spikes": [
+    {
+      "topic": "Quantum Machine Learning",
+      "start_day": 70,
+      "end_day": 75,
+      "spike_intensity": 350
+    },
+    {
+      "topic": "Retrieval-Augmented Generation",
+      "start_day": 115,
+      "end_day": 120,
+      "spike_intensity": 450
+    },
+    {
+      "topic": "CRISPR-Cas9",
+      "start_day": 150,
+      "end_day": 155,
+      "spike_intensity": 400
+    }
+  ]
+}
