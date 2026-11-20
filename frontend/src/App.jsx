@@ -165,7 +165,8 @@ export default function App() {
           <ProfilePage 
             currentUser={currentUser} 
             onSwitchUser={setCurrentUser} 
-            allUsers={allUsers} 
+            allUsers={allUsers}
+            onUserRegistered={(u) => setAllUsers(prev => [u, ...prev])}
           />
         )}
       </main>

@@ -17,6 +17,15 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     password: str
 
+class UserUpdate(BaseModel):
+    full_name: Optional[str] = None
+    role: Optional[str] = None
+    department: Optional[str] = None
+    research_interests: Optional[str] = None
+    interest_tags: Optional[str] = None
+    bio: Optional[str] = None
+    publication_url: Optional[str] = None
+
 class UserLogin(BaseModel):
     username: str
     password: str

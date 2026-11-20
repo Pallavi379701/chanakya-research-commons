@@ -23,6 +23,8 @@ async function request(endpoint, options = {}) {
 export const api = {
   // F1 Auth & Users
   login: (username, password) => request("/auth/login", { method: "POST", body: JSON.stringify({ username, password }) }),
+  register: (userData) => request("/auth/register", { method: "POST", body: JSON.stringify(userData) }),
+  updateUser: (userId, userData) => request(`/auth/users/${userId}`, { method: "PUT", body: JSON.stringify(userData) }),
   getUsers: (params = "") => request(`/auth/users${params}`),
   getUser: (id) => request(`/auth/users/${id}`),
   followUser: (targetId, currentUserId) => request(`/auth/follow/${targetId}?current_user_id=${currentUserId}`, { method: "POST" }),

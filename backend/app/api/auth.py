@@ -7,7 +7,7 @@ from sqlalchemy import func
 
 from app.core.database import get_db
 from app.models.models import User, Follow, TopicFollow
-from app.schemas.schemas import UserCreate, UserLogin, UserOut, TokenResponse
+from app.schemas.schemas import UserCreate, UserUpdate, UserLogin, UserOut, TokenResponse
 
 router = APIRouter(prefix="/auth", tags=["F1: Accounts & Profiles"])
 
@@ -113,3 +113,33 @@ def follow_topic(topic: str, current_user_id: int = 1, db: Session = Depends(get
         db.add(new_tf)
         db.commit()
         return {"action": "followed_topic", "topic": topic}
+
+@router.put("/users/{user_id}", response_model=UserOut)
+def update_user_profile(user_id: int, user_in: UserUpdate, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    if user_in.full_name is not None:
+        user.full_name = user_in.full_name
+    if user_in.role is not None:
+        user.role = user_in.role
+    if user_in.department is not None:
+        user.department = user_in.department
+    if user_in.research_interests is not None:
+        user.research_interests = user_in.research_interests
+    if user_in.interest_tags is not None:
+        user.interest_tags = user_in.interest_tags
+    if user_in.bio is not None:
+        user.bio = user_in.bio
+    if user_in.publication_url is not None:
+        user.publication_url = user_in.publication_url
+        
+    db.commit()
+    db.refresh(user)
+
+    u_out = UserOut.model_validate(user)
+    u_out.followers_count = db.query(Follow).filter(Follow.following_id == user.id).count()
+    u_out.following_count = db.query(Follow).filter(Follow.follower_id == user.id).count()
+    return u_out
+
