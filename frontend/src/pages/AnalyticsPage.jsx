@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BarChart3, Network, Database, Layers, ArrowDown, ChevronRight, Award, Building2 } from 'lucide-react';
+import { BarChart3, Network, Database, Layers, ArrowDown, ChevronRight, Award, Building2, RefreshCw } from 'lucide-react';
 import { api } from '../services/api';
 
 export function AnalyticsPage() {
@@ -13,18 +13,18 @@ export function AnalyticsPage() {
   const loadAnalytics = async () => {
     setLoading(true);
     try {
-      const [trendData, collabData, paperData, drillData] = await Promise.all([
+      const results = await Promise.allSettled([
         api.getDepartmentTrends(),
         api.getCollaborationNetwork(),
         api.getTopEngagedPapers(),
         api.getDrilldown(selectedDept)
       ]);
-      setTrends(trendData);
-      setCollaboration(collabData);
-      setTopPapers(paperData);
-      setDrilldown(drillData);
+      if (results[0].status === 'fulfilled' && results[0].value) setTrends(results[0].value);
+      if (results[1].status === 'fulfilled' && results[1].value) setCollaboration(results[1].value);
+      if (results[2].status === 'fulfilled' && results[2].value) setTopPapers(results[2].value);
+      if (results[3].status === 'fulfilled' && results[3].value) setDrilldown(results[3].value);
     } catch (err) {
-      console.error(err);
+      console.error("Error loading analytics:", err);
     } finally {
       setLoading(false);
     }
@@ -47,11 +47,39 @@ export function AnalyticsPage() {
             Columnar OLAP queries powered by DuckDB over Star Schema Parquet files (Gold Layer).
           </p>
         </div>
-        <div className="text-right">
-          <span className="text-[10px] text-slate-400 block uppercase tracking-wider font-semibold">Engine</span>
-          <span className="text-sm font-bold text-amber-400 font-mono">DuckDB 2.0 / Parquet Star Schema</span>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={loadAnalytics}
+            disabled={loading}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 text-xs font-medium rounded-lg border border-slate-700 transition-colors"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin text-amber-400' : ''}`} />
+            {loading ? 'Querying DuckDB...' : 'Refresh OLAP'}
+          </button>
+          <div className="text-right">
+            <span className="text-[10px] text-slate-400 block uppercase tracking-wider font-semibold">Engine</span>
+            <span className="text-sm font-bold text-amber-400 font-mono">DuckDB 2.0 / Parquet Star Schema</span>
+          </div>
         </div>
       </div>
+
+      {/* Sleep / Cold Start Notice Banner if backend hasn't responded */}
+      {!drilldown && !loading && (
+        <div className="bg-amber-50 border border-amber-200 text-amber-800 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
+          <div>
+            <p className="font-bold text-sm">Analytics Engine Initializing</p>
+            <p className="text-xs text-amber-700 mt-0.5">
+              Render free tier instances sleep after inactivity. If the service is waking up, please wait 15-20 seconds and click Retry.
+            </p>
+          </div>
+          <button
+            onClick={loadAnalytics}
+            className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-lg transition-colors shrink-0"
+          >
+            Retry Connection
+          </button>
+        </div>
+      )}
 
       {/* KPI Summary Cards */}
       {drilldown?.university_summary && (
